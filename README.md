@@ -1,2 +1,4 @@
-# F1-homework
-my first framework  
+
+
+# How to run the test
+mvn verify -Denv=qa -Dbrowser=ch
