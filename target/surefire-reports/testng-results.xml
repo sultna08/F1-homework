@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="31997" started-at="2023-03-18T14:33:29 EDT" finished-at="2023-03-18T14:34:01 EDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@5fd85d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="31997" started-at="2023-03-18T14:33:29 EDT" finished-at="2023-03-18T14:34:01 EDT">
+      <class name="TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@5fd85d]" name="setUpClass" is-config="true" duration-ms="543" started-at="2023-03-18T14:33:30 EDT" finished-at="2023-03-18T14:33:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@5fd85d]" name="runScenario" duration-ms="20607" started-at="2023-03-18T14:33:30 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-18T14:33:51 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to login with valid email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:62885/devtools/browser/4a0f7811-2395-41bb-8884-8501a89ebb1f
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'REG-224-33755', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62885/devtools/browser/4a0f7811-2395-41bb-8884-8501a89ebb1f
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'REG-224-33755', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+at base.Config.SetupBrowser(Config.java:20)
+at StepDefinitions.Hook.beforeEachTest(Hook.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@5fd85d]" name="runScenario" duration-ms="2728" started-at="2023-03-18T14:33:51 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-18T14:33:53 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not be able to login with valid email and invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:62897/devtools/browser/b1059250-9e25-423a-89e8-1f39cfb28f9f
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'REG-224-33755', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62897/devtools/browser/b1059250-9e25-423a-89e8-1f39cfb28f9f
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'REG-224-33755', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+at base.Config.SetupBrowser(Config.java:20)
+at StepDefinitions.Hook.beforeEachTest(Hook.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@5fd85d]" name="runScenario" duration-ms="3232" started-at="2023-03-18T14:33:53 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-18T14:33:57 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not be able to login with invalid email and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:62909/devtools/browser/2cab8c7d-3d13-4e15-8b28-c8a3f9570793
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'REG-224-33755', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62909/devtools/browser/2cab8c7d-3d13-4e15-8b28-c8a3f9570793
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'REG-224-33755', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+at base.Config.SetupBrowser(Config.java:20)
+at StepDefinitions.Hook.beforeEachTest(Hook.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@5fd85d]" name="runScenario" duration-ms="4549" started-at="2023-03-18T14:33:57 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-18T14:34:01 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not be able to login with invalid email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:62921/devtools/browser/bb06a280-edbe-4c85-8953-15aef83c3201
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'REG-224-33755', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62921/devtools/browser/bb06a280-edbe-4c85-8953-15aef83c3201
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'REG-224-33755', ip: '192.168.1.185', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+at java.util.Optional.map(Optional.java:215)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+at base.Config.SetupBrowser(Config.java:20)
+at StepDefinitions.Hook.beforeEachTest(Hook.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@5fd85d]" name="tearDownClass" is-config="true" duration-ms="269" started-at="2023-03-18T14:34:01 EDT" finished-at="2023-03-18T14:34:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

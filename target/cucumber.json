@@ -1,0 +1,408 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-18T18:33:30.823Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62885/devtools/browser/4a0f7811-2395-41bb-8884-8501a89ebb1f\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027REG-224-33755\u0027, ip: \u0027192.168.1.185\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_361\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:104)\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)\r\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)\r\n\tat java.util.Optional.map(Optional.java:215)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.\u003cinit\u003e(ChromiumDriver.java:122)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:104)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:91)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:46)\r\n\tat base.Config.SetupBrowser(Config.java:20)\r\n\tat StepDefinitions.Hook.beforeEachTest(Hook.java:21)\r\n",
+              "duration": 20323000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hook.beforeEachTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User should be able to login with valid email and password",
+        "description": "",
+        "id": "login-feature;user-should-be-able-to-login-with-valid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.Hook.afterEachTest(Hook.java:39)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hook.afterEachTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user in TalentTEK Homepage",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userInTalentTEKHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enter valid email address",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userEnterValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enter valid password",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on Log In button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userClicksOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user should be able to successfully login",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userShouldBeAbleToSuccessfullyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-18T18:33:51.236Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62897/devtools/browser/b1059250-9e25-423a-89e8-1f39cfb28f9f\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027REG-224-33755\u0027, ip: \u0027192.168.1.185\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_361\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:104)\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)\r\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)\r\n\tat java.util.Optional.map(Optional.java:215)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.\u003cinit\u003e(ChromiumDriver.java:122)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:104)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:91)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:46)\r\n\tat base.Config.SetupBrowser(Config.java:20)\r\n\tat StepDefinitions.Hook.beforeEachTest(Hook.java:21)\r\n",
+              "duration": 2680000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hook.beforeEachTest()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User should not be able to login with valid email and invalid password",
+        "description": "",
+        "id": "login-feature;user-should-not-be-able-to-login-with-valid-email-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.Hook.afterEachTest(Hook.java:39)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hook.afterEachTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user in TalentTEK Homepage",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userInTalentTEKHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user enter valid email address",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userEnterValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user enter invalid password",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userEnterInvalidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user clicks on Log In button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userClicksOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user should be able see \"You have entered an incorrect email or student Id.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You have entered an incorrect email or student Id.\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.userShouldBeAbleSee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@hb"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-18T18:33:53.924Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62909/devtools/browser/2cab8c7d-3d13-4e15-8b28-c8a3f9570793\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027REG-224-33755\u0027, ip: \u0027192.168.1.185\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_361\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:104)\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)\r\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)\r\n\tat java.util.Optional.map(Optional.java:215)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.\u003cinit\u003e(ChromiumDriver.java:122)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:104)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:91)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:46)\r\n\tat base.Config.SetupBrowser(Config.java:20)\r\n\tat StepDefinitions.Hook.beforeEachTest(Hook.java:21)\r\n",
+              "duration": 3226000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hook.beforeEachTest()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User should not be able to login with invalid email and valid password",
+        "description": "",
+        "id": "login-feature;user-should-not-be-able-to-login-with-invalid-email-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.Hook.afterEachTest(Hook.java:39)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hook.afterEachTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user in TalentTEK Homepage",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userInTalentTEKHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user enter invalid email address",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userEnterInvalidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user enter valid password",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user clicks on Log In button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userClicksOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user should be able see \"You have entered an incorrect email or student\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You have entered an incorrect email or student\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.userShouldBeAbleSee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-18T18:33:57.165Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62921/devtools/browser/bb06a280-edbe-4c85-8953-15aef83c3201\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027REG-224-33755\u0027, ip: \u0027192.168.1.185\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_361\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:104)\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)\r\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)\r\n\tat java.util.Optional.map(Optional.java:215)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.\u003cinit\u003e(ChromiumDriver.java:122)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:104)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:91)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:46)\r\n\tat base.Config.SetupBrowser(Config.java:20)\r\n\tat StepDefinitions.Hook.beforeEachTest(Hook.java:21)\r\n",
+              "duration": 4535000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hook.beforeEachTest()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User should not be able to login with invalid email and password",
+        "description": "",
+        "id": "login-feature;user-should-not-be-able-to-login-with-invalid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.Hook.afterEachTest(Hook.java:39)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hook.afterEachTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "user in TalentTEK Homepage",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userInTalentTEKHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user enter invalid email address",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userEnterInvalidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "user enter invalid password",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userEnterInvalidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "user clicks on Log In button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.userClicksOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user should be able see \"You have entered an incorrect email or student Id.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You have entered an incorrect email or student Id.\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.userShouldBeAbleSee(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]
